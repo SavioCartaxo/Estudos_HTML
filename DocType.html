@@ -1,37 +1,80 @@
-# declara a versão do HTML que estou usando
+<!--declara a versão do HTML que estou usando-->
 <!DOCTYPE html>
 
-# Tag raiz - tudo que for colocar no código tem que está dentro do dessa tag
-
+<!--Tag raiz - tudo que for colocar no código tem que está dentro do dessa tag(html)-->
 <html>
 
-    # Metadados que apenas o navegador precisa ler(nome, descricao...)
+    <!--Metadados que apenas o navegador precisa ler(nome, descricao...)-->
     <head>
         <title>Quiz para programadores</title>
-        # A Tag meta precisa de atributos para funcionar - é uma Tag vazia
+        <!--A Tag meta precisa de atributos para funcionar - é uma Tag vazia-->
         <meta name="description" content="Um quiz interativo para testar seus conhecimentos">
         <meta name="author" content="@SavioCartaxo">
         <meta name="keyworld" content="Quiz">
     </head>
 
-    # o codigo queo usuario "vê"
+    <!--o codigo queo usuario "vê"-->
     <body>
-        # cabeçalho, conteudo principal e rodapé
-        # header, main, footer
-        # São Tags semânticas
+        <!--cabeçalho, conteudo principal e rodapé-->
+        <!--header, main, footer-->
+        <!--São Tags semânticas-->
         <header>
             <h1>Quiz interativo para Programadores</h1>
-            # Tag para paragrafos
+            <!--Tag para paragrafos-->
             <p>Vamo começar?!</p>
         </header>
 
         <main>
-            # Tag semantica para ajudar na organização
+            <!--Tag semantica - section - para ajudar na organização-->
             <section>
                 <h2>Sobre esse quiz</h2>
                 <p>Este quiz foi pensado para testar seus conhecientos em programação</p>
                 <p>Espero ter você aqui até o final, vambora</p>
             </section>
+
+            <section>
+                <h2>Destaques</h2>
+                <p>vamos começar a aprender a fazer palavras em <strong>negrito</strong>,
+                usando as palavras <strong>strong</strong>, <b>b</b><p>
+                <p>Também pode-se colocar a palavra em italico, com as tags <em>em</em> e <i>i</i></p>
+                <p>Tambem pode-se pular linha com a tag <br>, lembrando que br=break</p>
+                <p>se quiser usar abrevições, pode-se usar a tag abbr, como mostrado a seguir com <abbr title="HYPERTEXT MARKUP LANGUAGE">HTML</abbr></p>
+            </section>
+
+            <section>
+
+                <!--Aqui vou fazer um botão de opções-->
+                <!--Aqui usamos a tag form-->
+                
+                <h2><strong>Pergunta 1: Qual sua linguagem de programação favorita?</strong></h2>
+                
+                <form>
+                    <input type="radio" value="Python" id="Pergunta1OpA"
+                    name="Pergunta1">
+                    <label for="Pergunta1OpA">Python</label> <br>
+
+                    <input type="radio" value ="CPP"   id="Pergunta1OpB"
+                    name="Pergunta1">
+                    <label for="pergunta1OpB ">CPP</label> <br>
+
+                    <input type="radio" value="Java"   id="Pergunta1OpC"
+                    name="Pergunta1"> <!--o name ser igual significa que só pode ter uma resposta -->
+                    <label for="Pergunta1OpC">Java</label> <br>
+                </form>
+
+            </section>
+
+            <section>
+                <!--Pergunta 2, aprendendo a ler entrada pelo teclado-->
+
+                <h2><strong>Pergunta 2: oq é www.com?</strong></h2>
+
+                <form>
+                    <input type="text" id="pergunta2" name="pergunta2" placeholder="Digite sua resposta..."></input>
+                </form>
+
+            </section>
+
         </main>
 
         <footer>
