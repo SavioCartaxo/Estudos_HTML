@@ -1,0 +1,27 @@
+main {
+    height: 10rem;
+}
+
+.classOne {
+    display: flex;
+
+    /*Sireção e sentido*/
+    flex-direction: row-reverse;
+    flex-direction: row;
+    
+    /*Espaçamento do bloco - ajuste na horizontal*/
+    /* justify-content: space-around; */
+    justify-content: center;
+
+    /*Espaçamento do bloco - ajuste na vertical
+    align-items: flex-start;
+    align-items: flex-end; 
+    align-items: center; */
+    align-items: stretch;
+    
+    /*Isso serve para quebra de linha*/
+    flex-wrap: nowrap;
+    flex-wrap: wrap;
+
+    
+}
